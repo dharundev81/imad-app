@@ -10,7 +10,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/demo', function(req,res){
-    res.send("THIS IS Dharun Babu");
+    //res.send("THIS IS Dharun Babu");
+    res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
